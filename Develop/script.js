@@ -22,8 +22,7 @@ $(document).ready(function () {
             var blockTime = parseInt(
                 $(this)
                 .attr("id")
-                .split("-")[1]
-                );
+            );
 
             // To check the time and add the classes for background indicators
             if (blockTime < timeNow) {
