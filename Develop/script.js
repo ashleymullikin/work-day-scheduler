@@ -19,7 +19,11 @@ $(document).ready(function () {
 
         // loop over time blocks
         $(".time-block").each(function () {
-            var blockTime = parseInt($(this).attr("id").split("hour")[1]);
+            var blockTime = parseInt(
+                $(this)
+                .attr("id")
+                .split("-")[1]
+                );
 
             // To check the time and add the classes for background indicators
             if (blockTime < timeNow) {
@@ -33,6 +37,8 @@ $(document).ready(function () {
                 $(this).addClass("present");
             }
             else {
+                console.log(blockTime);
+                console.log(timeNow);
                 $(this).removeClass("present");
                 $(this).removeClass("past");
                 $(this).addClass("future");
@@ -42,16 +48,16 @@ $(document).ready(function () {
     }
 
     // Get item from local storage if any
-    $("#8am .description").val(localStorage.getItem("8am"));
-    $("#9am .description").val(localStorage.getItem("9pm"));
-    $("#10am .description").val(localStorage.getItem("10am"));
-    $("#11am .description").val(localStorage.getItem("11am"));
-    $("#12pm .description").val(localStorage.getItem("12pm"));
-    $("#1pm .description").val(localStorage.getItem("1pm"));
-    $("#2pm .description").val(localStorage.getItem("2pm"));
-    $("#3pm .description").val(localStorage.getItem("3pm"));
-    $("#4pm .description").val(localStorage.getItem("4pm"));
-    $("#5pm .description").val(localStorage.getItem("5pm"));
+    $("#8 .description").val(localStorage.getItem("8"));
+    $("#9 .description").val(localStorage.getItem("9"));
+    $("#10 .description").val(localStorage.getItem("10"));
+    $("#11 .description").val(localStorage.getItem("11"));
+    $("#12 .description").val(localStorage.getItem("12"));
+    $("#13 .description").val(localStorage.getItem("13"));
+    $("#14 .description").val(localStorage.getItem("14"));
+    $("#15 .description").val(localStorage.getItem("15"));
+    $("#16 .description").val(localStorage.getItem("16"));
+    $("#17 .description").val(localStorage.getItem("17"));
 
     timeTracker();
 })
