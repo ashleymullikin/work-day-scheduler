@@ -1,4 +1,9 @@
 # Work Day Scheduler Starter Code
+Deployed: https://ashleymullikin.github.io/work-day-scheduler/
+
+Github: https://github.com/ashleymullikin/work-day-scheduler
+
+
 Work Day Scheduler
 Description
 a simple calendar application that allows a user to save events for each hour of the day. It runs in the browser and feature dynamically updated HTML and CSS powered by jQuery.
@@ -28,3 +33,8 @@ Each time block is color coded to indicate whether it occurs in the past(gray), 
 Each time block has an input field and save button where users can store their schedule.
 Once it saved, it will store in their local storage.
 This calendar is desktop and mobile compatible.
+
+![image](https://user-images.githubusercontent.com/109765172/187803062-95eecbac-6fee-436c-a3e9-87d5dce8218f.png)
+
+
+![image](https://user-images.githubusercontent.com/109765172/187803103-7a321d37-757b-4a61-a50d-e0786710d5d7.png)
